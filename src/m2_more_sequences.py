@@ -392,10 +392,14 @@ def count_same(sequence1, sequence2):
       type: sequence2: tuple or list or string
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #     The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-
+    number_of_indices = 0
+    for k in range(len(sequence1)):
+        if sequence1[k] == sequence2[k]:
+            number_of_indices = number_of_indices + 1
+    return number_of_indices
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
